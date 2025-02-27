@@ -1534,6 +1534,32 @@
   },
   {
     "ContainingType": "Car2Go.Controllers.ReservationController",
+    "Method": "GetAgentCarsReservationDetails",
+    "RelativePath": "api/Reservation/Reserved-AgentCar",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Car2Go.DTOs.AllDetailsReservationDto, Car2Go, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Car2Go.Controllers.ReservationController",
     "Method": "UpdateReservation",
     "RelativePath": "api/Reservation/update",
     "HttpMethod": "PUT",

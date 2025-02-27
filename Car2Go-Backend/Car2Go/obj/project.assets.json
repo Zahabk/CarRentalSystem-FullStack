@@ -7904,11 +7904,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "Z:\\Car2Go-New\\Car2Go-Backend\\Car2Go\\Car2Go.csproj",
+      "projectUniqueName": "Z:\\CarRentalSystem-FullStack\\Car2Go-Backend\\Car2Go\\Car2Go.csproj",
       "projectName": "Car2Go",
-      "projectPath": "Z:\\Car2Go-New\\Car2Go-Backend\\Car2Go\\Car2Go.csproj",
+      "projectPath": "Z:\\CarRentalSystem-FullStack\\Car2Go-Backend\\Car2Go\\Car2Go.csproj",
       "packagesPath": "C:\\Users\\Zahab\\.nuget\\packages\\",
-      "outputPath": "Z:\\Car2Go-New\\Car2Go-Backend\\Car2Go\\obj\\",
+      "outputPath": "Z:\\CarRentalSystem-FullStack\\Car2Go-Backend\\Car2Go\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Zahab\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -8000,13 +8000,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1900",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json."
-    }
-  ]
+  }
 }

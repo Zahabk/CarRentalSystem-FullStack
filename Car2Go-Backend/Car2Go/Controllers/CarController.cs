@@ -44,7 +44,7 @@ namespace Car2Go.Controllers
 
         //*******************************************************************************************************************************************
 
-        //[Authorize(Roles = "Admin,Agent")]
+        [Authorize(Roles = "Admin,Agent")]
         [Route("Create-Car")]
         [HttpPost]
         public ActionResult<CarDto> AddNewCar([FromForm] CreateCarDto carDto, string email)

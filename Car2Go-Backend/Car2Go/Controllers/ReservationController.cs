@@ -11,10 +11,12 @@ namespace Car2Go.Controllers
     public class ReservationController : ControllerBase
     {
         private readonly IReservationService _reservationService;
+        private readonly ICarService _carService;
 
-        public ReservationController(IReservationService reservationService)
+        public ReservationController(IReservationService reservationService, ICarService carService)
         {
             _reservationService = reservationService;
+            _carService = carService;
         }
 
         //[Authorize(Roles = "User")]
@@ -234,5 +236,37 @@ namespace Car2Go.Controllers
                 return StatusCode(500, new { message = "An error occurred while canceling the reservation.", details = ex.Message });
             }
         }
+
+        [Route("Reserved-AgentCar")]
+        [HttpGet]
+        public ActionResult<List<AllDetailsReservationDto>> GetAgentCarsReservationDetails(string email)
+        {
+            // Get all agent cars
+            var agentCars = _carService.GetCars(email);
+
+            // Get all reservation cars
+            var reservationCars = _reservationService.GetAllReservation();
+
+            // Check if either list is null
+            if (agentCars == null || reservationCars == null)
+            {
+                return NotFound("No cars found in the system.");
+            }
+
+            // Find common reservation details using the helper method
+            var commonReservations = reservationCars
+                .Where(r => agentCars.Any(a => a.LicensePlate == r.CarNumber))
+                .ToList();
+
+            // If no common reservations are found, return NotFound
+            if (commonReservations.Count == 0)
+            {
+                return NotFound("No matching reservation details found.");
+            }
+
+            // Return the list of matching reservation details
+            return Ok(commonReservations);
+        }
+
     }
 }
