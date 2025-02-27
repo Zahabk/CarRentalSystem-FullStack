@@ -25,7 +25,7 @@ namespace Car2Go.Controllers
         public ActionResult<IEnumerable<ReviewOfUserDto>> GetAllUserReviews()
         {
             IEnumerable<ReviewOfUserDto> result = _reviewService.GetReviewsOfAllUsers();
-            if (result.Count() <= 0) return NotFound();
+            if (result.Count() <= 0) return Ok(result);
 
             return Ok(result);
         }

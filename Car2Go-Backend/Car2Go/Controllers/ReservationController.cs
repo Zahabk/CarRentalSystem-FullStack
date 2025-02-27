@@ -174,9 +174,9 @@ namespace Car2Go.Controllers
             try
             {
                 IEnumerable<AllDetailsReservationDto> reservationDetails = _reservationService.GetAllReservation();
-                if(reservationDetails == null)
+                if(reservationDetails.Count() <= 0)
                 {
-                    return BadRequest("reservations not found");
+                    return Ok(reservationDetails);
 
                 }
                 return Ok(reservationDetails);

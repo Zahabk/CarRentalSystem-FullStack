@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "Z:\\FSD .Net + Angular training\\CRS-Car2Go\\Car2Go\\Car2Go.csproj": {}
+    "Z:\\Car2Go-New\\Car2Go-Backend\\Car2Go\\Car2Go.csproj": {}
   },
   "projects": {
-    "Z:\\FSD .Net + Angular training\\CRS-Car2Go\\Car2Go\\Car2Go.csproj": {
+    "Z:\\Car2Go-New\\Car2Go-Backend\\Car2Go\\Car2Go.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "Z:\\FSD .Net + Angular training\\CRS-Car2Go\\Car2Go\\Car2Go.csproj",
+        "projectUniqueName": "Z:\\Car2Go-New\\Car2Go-Backend\\Car2Go\\Car2Go.csproj",
         "projectName": "Car2Go",
-        "projectPath": "Z:\\FSD .Net + Angular training\\CRS-Car2Go\\Car2Go\\Car2Go.csproj",
+        "projectPath": "Z:\\Car2Go-New\\Car2Go-Backend\\Car2Go\\Car2Go.csproj",
         "packagesPath": "C:\\Users\\Zahab\\.nuget\\packages\\",
-        "outputPath": "Z:\\FSD .Net + Angular training\\CRS-Car2Go\\Car2Go\\obj\\",
+        "outputPath": "Z:\\Car2Go-New\\Car2Go-Backend\\Car2Go\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Zahab\\AppData\\Roaming\\NuGet\\NuGet.Config",

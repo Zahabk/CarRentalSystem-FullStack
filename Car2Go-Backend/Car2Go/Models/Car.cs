@@ -45,6 +45,8 @@ namespace Car2Go.Models
 
         public int LocationId { get; set; }
 
+        public int CreatedById { get; set; }
+
         //navigation properties
         public ICollection<Reservation> reservations { get; set; }
         public ICollection<Review> reviews { get; set; }

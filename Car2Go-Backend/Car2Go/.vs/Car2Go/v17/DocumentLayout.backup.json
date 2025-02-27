@@ -1,50 +1,50 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "Z:\\FSD .Net \u002B Angular training\\CRS-Car2Go\\Car2Go\\",
+  "WorkspaceRootPath": "Z:\\Car2Go-New\\Car2Go-Backend\\Car2Go\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B03D3022-9943-4950-901E-5020C5992A74}|Car2Go.csproj|z:\\fsd .net \u002B angular training\\crs-car2go\\car2go\\repository\\loginrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B03D3022-9943-4950-901E-5020C5992A74}|Car2Go.csproj|solutionrelative:repository\\loginrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B03D3022-9943-4950-901E-5020C5992A74}|Car2Go.csproj|z:\\fsd .net \u002B angular training\\crs-car2go\\car2go\\controllers\\carcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B03D3022-9943-4950-901E-5020C5992A74}|Car2Go.csproj|solutionrelative:controllers\\carcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B03D3022-9943-4950-901E-5020C5992A74}|Car2Go.csproj|z:\\fsd .net \u002B angular training\\crs-car2go\\car2go\\repository\\carrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B03D3022-9943-4950-901E-5020C5992A74}|Car2Go.csproj|solutionrelative:repository\\carrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B03D3022-9943-4950-901E-5020C5992A74}|Car2Go.csproj|z:\\fsd .net \u002B angular training\\crs-car2go\\car2go\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B03D3022-9943-4950-901E-5020C5992A74}|Car2Go.csproj|solutionrelative:dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B03D3022-9943-4950-901E-5020C5992A74}|Car2Go.csproj|z:\\fsd .net \u002B angular training\\crs-car2go\\car2go\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B03D3022-9943-4950-901E-5020C5992A74}|Car2Go.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B03D3022-9943-4950-901E-5020C5992A74}|Car2Go.csproj|z:\\fsd .net \u002B angular training\\crs-car2go\\car2go\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B03D3022-9943-4950-901E-5020C5992A74}|Car2Go.csproj|solutionrelative:repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B03D3022-9943-4950-901E-5020C5992A74}|Car2Go.csproj|z:\\fsd .net \u002B angular training\\crs-car2go\\car2go\\services\\iagentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B03D3022-9943-4950-901E-5020C5992A74}|Car2Go.csproj|solutionrelative:services\\iagentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B03D3022-9943-4950-901E-5020C5992A74}|Car2Go.csproj|z:\\fsd .net \u002B angular training\\crs-car2go\\car2go\\repository\\agentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B03D3022-9943-4950-901E-5020C5992A74}|Car2Go.csproj|solutionrelative:repository\\agentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B03D3022-9943-4950-901E-5020C5992A74}|Car2Go.csproj|z:\\fsd .net \u002B angular training\\crs-car2go\\car2go\\controllers\\agentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B03D3022-9943-4950-901E-5020C5992A74}|Car2Go.csproj|solutionrelative:controllers\\agentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B03D3022-9943-4950-901E-5020C5992A74}|Car2Go.csproj|z:\\fsd .net \u002B angular training\\crs-car2go\\car2go\\dtos\\agentcarwithimagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B03D3022-9943-4950-901E-5020C5992A74}|Car2Go.csproj|z:\\car2go-new\\car2go-backend\\car2go\\dtos\\agentcarwithimagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B03D3022-9943-4950-901E-5020C5992A74}|Car2Go.csproj|solutionrelative:dtos\\agentcarwithimagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B03D3022-9943-4950-901E-5020C5992A74}|Car2Go.csproj|z:\\fsd .net \u002B angular training\\crs-car2go\\car2go\\services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B03D3022-9943-4950-901E-5020C5992A74}|Car2Go.csproj|solutionrelative:services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B03D3022-9943-4950-901E-5020C5992A74}|Car2Go.csproj|z:\\car2go-new\\car2go-backend\\car2go\\controllers\\carcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B03D3022-9943-4950-901E-5020C5992A74}|Car2Go.csproj|solutionrelative:controllers\\carcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B03D3022-9943-4950-901E-5020C5992A74}|Car2Go.csproj|z:\\car2go-new\\car2go-backend\\car2go\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B03D3022-9943-4950-901E-5020C5992A74}|Car2Go.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B03D3022-9943-4950-901E-5020C5992A74}|Car2Go.csproj|z:\\car2go-new\\car2go-backend\\car2go\\repository\\carrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B03D3022-9943-4950-901E-5020C5992A74}|Car2Go.csproj|solutionrelative:repository\\carrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B03D3022-9943-4950-901E-5020C5992A74}|Car2Go.csproj|z:\\car2go-new\\car2go-backend\\car2go\\services\\icarservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B03D3022-9943-4950-901E-5020C5992A74}|Car2Go.csproj|solutionrelative:services\\icarservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B03D3022-9943-4950-901E-5020C5992A74}|Car2Go.csproj|z:\\car2go-new\\car2go-backend\\car2go\\dtos\\createcardto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B03D3022-9943-4950-901E-5020C5992A74}|Car2Go.csproj|solutionrelative:dtos\\createcardto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B03D3022-9943-4950-901E-5020C5992A74}|Car2Go.csproj|z:\\car2go-new\\car2go-backend\\car2go\\repository\\reservationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B03D3022-9943-4950-901E-5020C5992A74}|Car2Go.csproj|solutionrelative:repository\\reservationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B03D3022-9943-4950-901E-5020C5992A74}|Car2Go.csproj|z:\\car2go-new\\car2go-backend\\car2go\\controllers\\reservationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B03D3022-9943-4950-901E-5020C5992A74}|Car2Go.csproj|solutionrelative:controllers\\reservationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B03D3022-9943-4950-901E-5020C5992A74}|Car2Go.csproj|z:\\car2go-new\\car2go-backend\\car2go\\controllers\\reviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B03D3022-9943-4950-901E-5020C5992A74}|Car2Go.csproj|solutionrelative:controllers\\reviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B03D3022-9943-4950-901E-5020C5992A74}|Car2Go.csproj|z:\\car2go-new\\car2go-backend\\car2go\\models\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B03D3022-9943-4950-901E-5020C5992A74}|Car2Go.csproj|solutionrelative:models\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B03D3022-9943-4950-901E-5020C5992A74}|Car2Go.csproj|z:\\car2go-new\\car2go-backend\\car2go\\repository\\loginrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B03D3022-9943-4950-901E-5020C5992A74}|Car2Go.csproj|solutionrelative:repository\\loginrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -66,136 +66,143 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "LoginRepository.cs",
-              "DocumentMoniker": "Z:\\FSD .Net \u002B Angular training\\CRS-Car2Go\\Car2Go\\Repository\\LoginRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\LoginRepository.cs",
-              "ToolTip": "Z:\\FSD .Net \u002B Angular training\\CRS-Car2Go\\Car2Go\\Repository\\LoginRepository.cs",
-              "RelativeToolTip": "Repository\\LoginRepository.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAWwCsAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "Z:\\Car2Go-New\\Car2Go-Backend\\Car2Go\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "Z:\\Car2Go-New\\Car2Go-Backend\\Car2Go\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAQwBcAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-18T03:45:32.05Z",
+              "WhenOpened": "2025-02-22T12:16:57.886Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "CarController.cs",
-              "DocumentMoniker": "Z:\\FSD .Net \u002B Angular training\\CRS-Car2Go\\Car2Go\\Controllers\\CarController.cs",
+              "DocumentMoniker": "Z:\\Car2Go-New\\Car2Go-Backend\\Car2Go\\Controllers\\CarController.cs",
               "RelativeDocumentMoniker": "Controllers\\CarController.cs",
-              "ToolTip": "Z:\\FSD .Net \u002B Angular training\\CRS-Car2Go\\Car2Go\\Controllers\\CarController.cs",
+              "ToolTip": "Z:\\Car2Go-New\\Car2Go-Backend\\Car2Go\\Controllers\\CarController.cs",
               "RelativeToolTip": "Controllers\\CarController.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAD4v1kAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAG0AAAAAAAAAAAAAwHYAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T14:40:51.821Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "AgentController.cs",
-              "DocumentMoniker": "Z:\\FSD .Net \u002B Angular training\\CRS-Car2Go\\Car2Go\\Controllers\\AgentController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AgentController.cs",
-              "ToolTip": "Z:\\FSD .Net \u002B Angular training\\CRS-Car2Go\\Car2Go\\Controllers\\AgentController.cs",
-              "RelativeToolTip": "Controllers\\AgentController.cs",
-              "ViewState": "AgIAAGoAAAAAAAAAAAAAAIIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T13:07:45.012Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AgentRepository.cs",
-              "DocumentMoniker": "Z:\\FSD .Net \u002B Angular training\\CRS-Car2Go\\Car2Go\\Repository\\AgentRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\AgentRepository.cs",
-              "ToolTip": "Z:\\FSD .Net \u002B Angular training\\CRS-Car2Go\\Car2Go\\Repository\\AgentRepository.cs",
-              "RelativeToolTip": "Repository\\AgentRepository.cs",
-              "ViewState": "AgIAAEsBAAAAAAAAAAAawGUBAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T13:06:02.05Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "Z:\\FSD .Net \u002B Angular training\\CRS-Car2Go\\Car2Go\\Repository\\UserRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\UserRepository.cs",
-              "ToolTip": "Z:\\FSD .Net \u002B Angular training\\CRS-Car2Go\\Car2Go\\Repository\\UserRepository.cs",
-              "RelativeToolTip": "Repository\\UserRepository.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAWwBEAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T13:17:39.658Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "Z:\\FSD .Net \u002B Angular training\\CRS-Car2Go\\Car2Go\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
-              "ToolTip": "Z:\\FSD .Net \u002B Angular training\\CRS-Car2Go\\Car2Go\\Controllers\\UserController.cs",
-              "RelativeToolTip": "Controllers\\UserController.cs",
-              "ViewState": "AgIAAOMAAAAAAAAAAAAiwPwAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T13:17:16.71Z"
+              "WhenOpened": "2025-02-22T12:09:28.827Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "UserDto.cs",
-              "DocumentMoniker": "Z:\\FSD .Net \u002B Angular training\\CRS-Car2Go\\Car2Go\\DTOs\\UserDto.cs",
-              "RelativeDocumentMoniker": "DTOs\\UserDto.cs",
-              "ToolTip": "Z:\\FSD .Net \u002B Angular training\\CRS-Car2Go\\Car2Go\\DTOs\\UserDto.cs",
-              "RelativeToolTip": "DTOs\\UserDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T13:19:34.425Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "CarRepository.cs",
-              "DocumentMoniker": "Z:\\FSD .Net \u002B Angular training\\CRS-Car2Go\\Car2Go\\Repository\\CarRepository.cs",
+              "DocumentMoniker": "Z:\\Car2Go-New\\Car2Go-Backend\\Car2Go\\Repository\\CarRepository.cs",
               "RelativeDocumentMoniker": "Repository\\CarRepository.cs",
-              "ToolTip": "Z:\\FSD .Net \u002B Angular training\\CRS-Car2Go\\Car2Go\\Repository\\CarRepository.cs",
+              "ToolTip": "Z:\\Car2Go-New\\Car2Go-Backend\\Car2Go\\Repository\\CarRepository.cs",
               "RelativeToolTip": "Repository\\CarRepository.cs",
-              "ViewState": "AgIAAP8AAAAAAAAAAAA6wBkBAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAABACAAAAAAAAAAAUwBgCAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T14:40:51.766Z"
+              "WhenOpened": "2024-12-17T14:40:51.766Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "IUserService.cs",
-              "DocumentMoniker": "Z:\\FSD .Net \u002B Angular training\\CRS-Car2Go\\Car2Go\\Services\\IUserService.cs",
-              "RelativeDocumentMoniker": "Services\\IUserService.cs",
-              "ToolTip": "Z:\\FSD .Net \u002B Angular training\\CRS-Car2Go\\Car2Go\\Services\\IUserService.cs",
-              "RelativeToolTip": "Services\\IUserService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAtAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "ReservationController.cs",
+              "DocumentMoniker": "Z:\\Car2Go-New\\Car2Go-Backend\\Car2Go\\Controllers\\ReservationController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ReservationController.cs",
+              "ToolTip": "Z:\\Car2Go-New\\Car2Go-Backend\\Car2Go\\Controllers\\ReservationController.cs",
+              "RelativeToolTip": "Controllers\\ReservationController.cs",
+              "ViewState": "AgIAAKgAAAAAAAAAAAAowLsAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T13:16:33.426Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AgentCarWithImageDto.cs",
-              "DocumentMoniker": "Z:\\FSD .Net \u002B Angular training\\CRS-Car2Go\\Car2Go\\DTOs\\AgentCarWithImageDto.cs",
-              "RelativeDocumentMoniker": "DTOs\\AgentCarWithImageDto.cs",
-              "ToolTip": "Z:\\FSD .Net \u002B Angular training\\CRS-Car2Go\\Car2Go\\DTOs\\AgentCarWithImageDto.cs",
-              "RelativeToolTip": "DTOs\\AgentCarWithImageDto.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAkwCEAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T16:30:03.224Z"
+              "WhenOpened": "2025-01-30T06:02:04.377Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "IAgentService.cs",
-              "DocumentMoniker": "Z:\\FSD .Net \u002B Angular training\\CRS-Car2Go\\Car2Go\\Services\\IAgentService.cs",
-              "RelativeDocumentMoniker": "Services\\IAgentService.cs",
-              "ToolTip": "Z:\\FSD .Net \u002B Angular training\\CRS-Car2Go\\Car2Go\\Services\\IAgentService.cs",
-              "RelativeToolTip": "Services\\IAgentService.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAwAwAAACgAAAAAAAAAA==",
+              "Title": "ReservationRepository.cs",
+              "DocumentMoniker": "Z:\\Car2Go-New\\Car2Go-Backend\\Car2Go\\Repository\\ReservationRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\ReservationRepository.cs",
+              "ToolTip": "Z:\\Car2Go-New\\Car2Go-Backend\\Car2Go\\Repository\\ReservationRepository.cs",
+              "RelativeToolTip": "Repository\\ReservationRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T13:03:55.506Z"
+              "WhenOpened": "2025-01-30T06:06:09.19Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ReviewController.cs",
+              "DocumentMoniker": "Z:\\Car2Go-New\\Car2Go-Backend\\Car2Go\\Controllers\\ReviewController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ReviewController.cs",
+              "ToolTip": "Z:\\Car2Go-New\\Car2Go-Backend\\Car2Go\\Controllers\\ReviewController.cs",
+              "RelativeToolTip": "Controllers\\ReviewController.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAWwB4AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-30T05:49:43.356Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AgentCarWithImageDto.cs",
+              "DocumentMoniker": "Z:\\Car2Go-New\\Car2Go-Backend\\Car2Go\\DTOs\\AgentCarWithImageDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\AgentCarWithImageDto.cs",
+              "ToolTip": "Z:\\Car2Go-New\\Car2Go-Backend\\Car2Go\\DTOs\\AgentCarWithImageDto.cs",
+              "RelativeToolTip": "DTOs\\AgentCarWithImageDto.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAkwCEAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T16:30:03.224Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CreateCarDto.cs",
+              "DocumentMoniker": "Z:\\Car2Go-New\\Car2Go-Backend\\Car2Go\\DTOs\\CreateCarDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\CreateCarDto.cs",
+              "ToolTip": "Z:\\Car2Go-New\\Car2Go-Backend\\Car2Go\\DTOs\\CreateCarDto.cs",
+              "RelativeToolTip": "DTOs\\CreateCarDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T13:13:34.669Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ICarService.cs",
+              "DocumentMoniker": "Z:\\Car2Go-New\\Car2Go-Backend\\Car2Go\\Services\\ICarService.cs",
+              "RelativeDocumentMoniker": "Services\\ICarService.cs",
+              "ToolTip": "Z:\\Car2Go-New\\Car2Go-Backend\\Car2Go\\Services\\ICarService.cs",
+              "RelativeToolTip": "Services\\ICarService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-30T04:43:27.365Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Car.cs",
+              "DocumentMoniker": "Z:\\Car2Go-New\\Car2Go-Backend\\Car2Go\\Models\\Car.cs",
+              "RelativeDocumentMoniker": "Models\\Car.cs",
+              "ToolTip": "Z:\\Car2Go-New\\Car2Go-Backend\\Car2Go\\Models\\Car.cs",
+              "RelativeToolTip": "Models\\Car.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAkwC8AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T12:39:46.572Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "LoginRepository.cs",
+              "DocumentMoniker": "Z:\\Car2Go-New\\Car2Go-Backend\\Car2Go\\Repository\\LoginRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\LoginRepository.cs",
+              "ToolTip": "Z:\\Car2Go-New\\Car2Go-Backend\\Car2Go\\Repository\\LoginRepository.cs",
+              "RelativeToolTip": "Repository\\LoginRepository.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAD4vxQAAABmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T03:45:32.05Z"
             }
           ]
         }

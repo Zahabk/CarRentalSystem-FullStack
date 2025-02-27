@@ -90,9 +90,9 @@ namespace Car2Go.Data
 
 
             modelBuilder.Entity<Car>().HasData(
-                new Car() { CarId = 1, Make = "Honda", Model = "Honda City", year = 2020, Colour = "White",TotalSeats =5, LicensePlate = "MP09CP7235", PricePerDay = 3000, ImageUrl= "https://res.cloudinary.com/dhnatfkvb/image/upload/v1733810275/oyqzglkehqgbutmggfas.jpg", AvailableStatus = true,AvailableDate=dateOnly, LocationId = 2 },
-                new Car() { CarId = 2, Make = "Honda", Model = "Honda Amaze", year = 2018, Colour = "Red",TotalSeats=5, LicensePlate = "MH50PS2184", PricePerDay = 3200, ImageUrl= "https://res.cloudinary.com/dhnatfkvb/image/upload/v1733810445/honda-amaze-2018-red_vruzbl.jpg", AvailableStatus = true, AvailableDate = dateOnly.AddDays(1), LocationId = 1 },
-                new Car() { CarId = 3, Make = "Maruti Suzuki ",Model= " Maruti Suzuki Swift",year = 2021, Colour="Black",TotalSeats=5,LicensePlate= "MP09DY9472",PricePerDay=2000,ImageUrl = "http://res.cloudinary.com/dhnatfkvb/image/upload/v1733813312/o6xkah1rdvc4lytcydhp.webp" ,AvailableStatus = true,AvailableDate = dateOnly.AddDays(2),LocationId=3}
+                new Car() { CarId = 1, Make = "Honda", Model = "Honda City", year = 2020, Colour = "White",TotalSeats =5, LicensePlate = "MP09CP7235", PricePerDay = 3000, ImageUrl= "https://res.cloudinary.com/dhnatfkvb/image/upload/v1733810275/oyqzglkehqgbutmggfas.jpg", AvailableStatus = true,AvailableDate=dateOnly, LocationId = 2, CreatedById=3 },
+                new Car() { CarId = 2, Make = "Honda", Model = "Honda Amaze", year = 2018, Colour = "Red",TotalSeats=5, LicensePlate = "MH50PS2184", PricePerDay = 3200, ImageUrl= "https://res.cloudinary.com/dhnatfkvb/image/upload/v1733810445/honda-amaze-2018-red_vruzbl.jpg", AvailableStatus = true, AvailableDate = dateOnly.AddDays(1), LocationId = 1 , CreatedById = 3 },
+                new Car() { CarId = 3, Make = "Maruti Suzuki ",Model= " Maruti Suzuki Swift",year = 2021, Colour="Black",TotalSeats=5,LicensePlate= "MP09DY9472",PricePerDay=2000,ImageUrl = "http://res.cloudinary.com/dhnatfkvb/image/upload/v1733813312/o6xkah1rdvc4lytcydhp.webp" ,AvailableStatus = true,AvailableDate = dateOnly.AddDays(2),LocationId=3, CreatedById = 3 }
                 );
 
             modelBuilder.Entity<Location>().HasData(

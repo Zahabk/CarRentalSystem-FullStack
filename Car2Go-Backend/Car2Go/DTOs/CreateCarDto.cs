@@ -36,9 +36,9 @@ namespace Car2Go.DTOs
 
         public DateOnly AvailableDate { get; set; }
 
-        [Required(ErrorMessage = "City is required")]
         public IFormFile CarImageFile { get; set; }
 
+        [Required(ErrorMessage = "City is required")]
         public string City { get; set; }
 
         [Required(ErrorMessage = "Address required")]

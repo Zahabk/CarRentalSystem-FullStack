@@ -29,25 +29,25 @@ namespace Car2Go.Controllers
         //*******************************************************************************************************************************************
 
         //[Authorize(Roles = "Admin,User")]
-        [Route("get-all-cars")]
-        [HttpGet]
-        public ActionResult<IEnumerable<CarWithImageDto>> GetAllCars()
-        {
-            IEnumerable<CarWithImageDto> result = _carService.GetCars();
+        //[Route("get-all-cars")]
+        //[HttpGet]
+        //public ActionResult<IEnumerable<CarWithImageDto>> GetAllCars()
+        //{
+        //    IEnumerable<CarWithImageDto> result = _carService.GetCars();
 
-            if(result == null)
-            {
-                return NotFound();
-            }
-            return Ok(result);
-        }
+        //    if(result == null)
+        //    {
+        //        return NotFound();
+        //    }
+        //    return Ok(result);
+        //}
 
         //*******************************************************************************************************************************************
 
         //[Authorize(Roles = "Admin,Agent")]
         [Route("Create-Car")]
         [HttpPost]
-        public ActionResult<CarDto> AddNewCar([FromForm] CreateCarDto carDto)
+        public ActionResult<CarDto> AddNewCar([FromForm] CreateCarDto carDto, string email)
         {
             if (carDto.CarImageFile == null || carDto.CarImageFile.Length == 0)
             {
@@ -61,7 +61,7 @@ namespace Car2Go.Controllers
                 return BadRequest("Image file size Should be less than 10MB");
             }
 
-            var result = _carService.CreateCar(carDto);
+            var result = _carService.CreateCar(carDto,email);
 
             if (result.Model==null)
             {
@@ -109,6 +109,21 @@ namespace Car2Go.Controllers
 
             if (result == false) return NotFound();
 
+            return Ok(result);
+        }
+        //*******************************************************************************************************************************************
+
+
+        [Route("agent-get-all-cars")]
+        [HttpGet]
+        public ActionResult<IEnumerable<AgentCarWithImageDto>> GetAllCars(string email)
+        {
+            IEnumerable<CarWithRatingsDto> result = _carService.GetCars(email);
+
+            if (result == null)
+            {
+                return NotFound();
+            }
             return Ok(result);
         }
 

@@ -51,9 +51,6 @@ namespace Car2Go
 
             builder.Services.AddScoped<IPaymentService, PaymentRepository>();
 
-
-            builder.Services.AddScoped<IAgentService, AgentRepository>();
-
             builder.Services.AddScoped<ILoginService, LoginRepository>();
 
             builder.Services.AddScoped<TokenService>();

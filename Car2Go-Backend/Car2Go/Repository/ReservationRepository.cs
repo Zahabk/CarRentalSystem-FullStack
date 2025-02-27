@@ -493,13 +493,14 @@ namespace Car2Go.Repository
             try
             {
                 var reservation = _dbContext.Reservations.ToList();
+                List<AllDetailsReservationDto> reservationList = new List<AllDetailsReservationDto>();
 
                 if (reservation.Count() <= 0)
                 {
-                    throw new Exception("Reservations not found");
+                    //throw new Exception("Reservations not found");
+                    return reservationList;
                 }
 
-                List<AllDetailsReservationDto> reservationList = new List<AllDetailsReservationDto>();
 
                 foreach (Reservation r in reservation)
                 {

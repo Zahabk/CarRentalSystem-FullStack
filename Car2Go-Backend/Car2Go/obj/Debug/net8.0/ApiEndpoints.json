@@ -1,220 +1,5 @@
 [
   {
-    "ContainingType": "Car2Go.Controllers.AgentController",
-    "Method": "AddNewCar",
-    "RelativePath": "api/Agent/agent-Create-Car",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "Make",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Model",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "year",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "Colour",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "TotalSeats",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "LicensePlate",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "PricePerDay",
-        "Type": "System.Decimal",
-        "IsRequired": false
-      },
-      {
-        "Name": "AvailableStatus",
-        "Type": "System.Boolean",
-        "IsRequired": false
-      },
-      {
-        "Name": "AvailableDate",
-        "Type": "System.DateOnly",
-        "IsRequired": false
-      },
-      {
-        "Name": "CarImageFile",
-        "Type": "Microsoft.AspNetCore.Http.IFormFile",
-        "IsRequired": false
-      },
-      {
-        "Name": "City",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Address",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "State",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Country",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "ZipCode",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "email",
-        "Type": "System.String",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "Car2Go.DTOs.AgentCarDto",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "Car2Go.Controllers.AgentController",
-    "Method": "DeleteCarDetails",
-    "RelativePath": "api/Agent/agent-delete-car",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "licensePlate",
-        "Type": "System.String",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Car2Go.Controllers.AgentController",
-    "Method": "GetAllCars",
-    "RelativePath": "api/Agent/agent-get-all-cars",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[Car2Go.DTOs.AgentCarWithImageDto, Car2Go, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "Car2Go.Controllers.AgentController",
-    "Method": "UpdateCarDetails",
-    "RelativePath": "api/Agent/agent-update-car",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "carDto",
-        "Type": "Car2Go.DTOs.AgentUpdateCarDto",
-        "IsRequired": true
-      },
-      {
-        "Name": "licensePlate",
-        "Type": "System.String",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Car2Go.Controllers.AgentController",
-    "Method": "UpdateCarAndLocation",
-    "RelativePath": "api/Agent/agent-update-car-with-location",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "carWithLocationDto",
-        "Type": "Car2Go.DTOs.AgentCarWithLocationDto",
-        "IsRequired": true
-      },
-      {
-        "Name": "licensePlate",
-        "Type": "System.String",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Car2Go.Controllers.AgentController",
-    "Method": "GetCarsByEmail",
-    "RelativePath": "api/Agent/GetCarsByEmail",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "email",
-        "Type": "System.String",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Car2Go.Controllers.AgentController",
-    "Method": "GetCommonReservationDetails",
-    "RelativePath": "api/Agent/Reserved-AgentCar",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.List\u00601[[Car2Go.DTOs.AllDetailsReservationDto, Car2Go, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
     "ContainingType": "Car2Go.Controllers.AuthController",
     "Method": "Login",
     "RelativePath": "api/Auth/Login",
@@ -267,6 +52,32 @@
           "text/json"
         ],
         "StatusCode": 201
+      }
+    ]
+  },
+  {
+    "ContainingType": "Car2Go.Controllers.CarController",
+    "Method": "GetAllCars",
+    "RelativePath": "api/Car/agent-get-all-cars",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Car2Go.DTOs.AgentCarWithImageDto, Car2Go, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
       }
     ]
   },
@@ -352,6 +163,11 @@
         "Name": "ZipCode",
         "Type": "System.String",
         "IsRequired": false
+      },
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [
@@ -381,26 +197,6 @@
       }
     ],
     "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Car2Go.Controllers.CarController",
-    "Method": "GetAllCars",
-    "RelativePath": "api/Car/get-all-cars",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[Car2Go.DTOs.CarWithImageDto, Car2Go, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
   },
   {
     "ContainingType": "Car2Go.Controllers.CarController",
