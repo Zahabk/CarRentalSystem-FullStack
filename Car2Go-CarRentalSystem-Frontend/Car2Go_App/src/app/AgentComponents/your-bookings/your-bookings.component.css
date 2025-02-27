@@ -1,7 +1,7 @@
 .booking-container {
     width: 80vw;
     margin-left: 10vw; /* To center the container on the page */
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
 }
 
 .table {

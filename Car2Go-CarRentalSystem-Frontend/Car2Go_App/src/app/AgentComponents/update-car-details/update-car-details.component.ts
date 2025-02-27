@@ -1,30 +1,37 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
-import { ActivatedRoute, Router, RouterLink, RouterLinkActive } from '@angular/router';
+import {
+  FormBuilder,
+  FormGroup,
+  ReactiveFormsModule,
+  Validators,
+} from '@angular/forms';
+import {
+  ActivatedRoute,
+  Router,
+  RouterLink,
+  RouterLinkActive,
+} from '@angular/router';
 import { CarService } from '../../Services/car.service';
 import { carModel } from '../../Models/CarWithLocation';
-import { AgentNavBarComponent } from "../agent-nav-bar/agent-nav-bar.component";
+import { AgentNavBarComponent } from '../agent-nav-bar/agent-nav-bar.component';
 import { carModels } from '../../Models/carModels';
-
 
 @Component({
   selector: 'app-update-car-details',
-  imports: [ReactiveFormsModule,AgentNavBarComponent],
+  imports: [ReactiveFormsModule, AgentNavBarComponent],
   templateUrl: './update-car-details.component.html',
-  styleUrls: ['./update-car-details.component.css']
+  styleUrls: ['./update-car-details.component.css'],
 })
 export class UpdateCarDetailsComponent implements OnInit {
-
-  
   carForm!: FormGroup;
-  carData: carModels;
+  carData: carModel;
 
   constructor(
     private fb: FormBuilder,
     private route: ActivatedRoute,
     private carService: CarService,
     private router: Router
-  ) { 
+  ) {
     // Get the car data from the route state, passed from the previous page.
     this.carData = this.router.getCurrentNavigation()?.extras.state?.['data'];
   }
@@ -42,32 +49,35 @@ export class UpdateCarDetailsComponent implements OnInit {
       model: ['', Validators.required],
       year: ['', [Validators.required, Validators.min(1886)]],
       colour: ['', Validators.required],
-      totalSeats: [5, [Validators.required, Validators.min(5), Validators.max(7)]],
+      totalSeats: [
+        5,
+        [Validators.required, Validators.min(5), Validators.max(7)],
+      ],
       licensePlate: ['', Validators.required],
       pricePerDay: ['', Validators.required],
-      
+
       availableStatus: [false],
       availableDate: ['', Validators.required],
-      // city: ['', Validators.required],
-      // address: ['', Validators.required],
-      // state: ['', Validators.required],
-      // country: ['', Validators.required],
-      // zipCode: ['', Validators.required],
-      email: ['', [Validators.required, Validators.email]]
+      city: ['', Validators.required],
+      address: ['', Validators.required],
+      state: ['', Validators.required],
+      country: ['', Validators.required],
+      zipCode: ['', Validators.required],
     });
   }
 
   onSubmit() {
     if (this.carForm.valid) {
-      const updatedCar = this.carForm.value as carModels;
-      this.carService.updateCar(updatedCar).subscribe(response => {
-        alert('Car updated successfully!');
-        this.router.navigate(['/app-your-cars']); // Redirect after successful update
-      }, error => {
-        alert('Failed to update car. Please try again.');
+      const updatedCar = this.carForm.value as carModel;
+      this.carService.updateCar(updatedCar).subscribe({
+        next: (response) => {
+          alert('Car updated successfully!');
+          this.router.navigate(['/app-your-cars']); // Redirect after successful update
+        },
+        error: (error) => {
+          alert('Failed to update car. Please try again.');
+        },
       });
     }
   }
-
- 
 }

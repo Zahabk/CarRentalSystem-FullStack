@@ -1,85 +1,180 @@
 <app-agent-nav-bar></app-agent-nav-bar>
+
 <div class="container">
+  <form [formGroup]="carForm" (ngSubmit)="onSubmit()" class="form-container">
     <h2>Update Car Details</h2>
-    <form [formGroup]="carForm" (ngSubmit)="onSubmit()">
+
+    <!-- Row for Make and Model -->
+    <div class="form-row">
       <div class="form-group">
         <label for="make">Make</label>
-        <input id="make" type="text" class="form-control" formControlName="make" placeholder="Enter car make" />
+        <input
+          id="make"
+          type="text"
+          class="form-control"
+          formControlName="make"
+          placeholder="Enter car make"
+        />
       </div>
-  
       <div class="form-group">
         <label for="model">Model</label>
-        <input id="model" type="text" class="form-control" formControlName="model" placeholder="Enter car model" />
+        <input
+          id="model"
+          type="text"
+          class="form-control"
+          formControlName="model"
+          placeholder="Enter car model"
+        />
       </div>
-  
+    </div>
+
+    <!-- Row for Year and Colour -->
+    <div class="form-row">
       <div class="form-group">
         <label for="year">Year</label>
-        <input id="year" type="number" class="form-control" formControlName="year" placeholder="Enter car year" />
+        <input
+          id="year"
+          type="number"
+          class="form-control"
+          formControlName="year"
+          placeholder="Enter car year"
+        />
       </div>
-  
       <div class="form-group">
         <label for="colour">Colour</label>
-        <input id="colour" type="text" class="form-control" formControlName="colour" placeholder="Enter car colour" />
+        <input
+          id="colour"
+          type="text"
+          class="form-control"
+          formControlName="colour"
+          placeholder="Enter car colour"
+        />
       </div>
-  
+    </div>
+
+    <!-- Row for Total Seats and License Plate -->
+    <div class="form-row">
       <div class="form-group">
         <label for="totalSeats">Total Seats</label>
-        <input id="totalSeats" type="number" class="form-control" formControlName="totalSeats" placeholder="Enter total seats (5-7)" />
+        <input
+          id="totalSeats"
+          type="number"
+          class="form-control"
+          formControlName="totalSeats"
+          placeholder="Enter total seats"
+          max="7"
+          min="5"
+        />
       </div>
-  
       <div class="form-group">
         <label for="licensePlate">License Plate</label>
-        <input id="licensePlate" type="text" class="form-control" formControlName="licensePlate" placeholder="Enter license plate" />
+        <input
+          id="licensePlate"
+          type="text"
+          class="form-control"
+          formControlName="licensePlate"
+          placeholder="Enter license plate"
+        />
       </div>
-  
+    </div>
+
+    <!-- Row for Price Per Day and Available Status -->
+    <div class="form-row">
       <div class="form-group">
         <label for="pricePerDay">Price Per Day</label>
-        <input id="pricePerDay" type="number" class="form-control" formControlName="pricePerDay" placeholder="Enter price per day" />
+        <input
+          id="pricePerDay"
+          type="number"
+          class="form-control"
+          formControlName="pricePerDay"
+          placeholder="Enter price per day"
+        />
       </div>
-  
-      <div class="form-group">
-        <label for="availableStatus">Available Status</label>
-        <input id="availableStatus" type="checkbox" formControlName="availableStatus" />
+      <div class="form-group checkbox-container">
+        <input
+          id="availableStatus"
+          type="checkbox"
+          formControlName="availableStatus"
+        />
+        <label for="availableStatus" class="checkbox-label"
+          >Available Status</label
+        >
       </div>
-  
+    </div>
+
+    <!-- Row for Available Date and City -->
+    <div class="form-row">
       <div class="form-group">
         <label for="availableDate">Available Date</label>
-        <input id="availableDate" type="date" class="form-control" formControlName="availableDate" />
+        <input
+          id="availableDate"
+          type="date"
+          class="form-control"
+          formControlName="availableDate"
+        />
       </div>
-  
-      <!-- <div class="form-group">
+      <div class="form-group">
         <label for="city">City</label>
-        <input id="city" type="text" class="form-control" formControlName="city" placeholder="Enter city" />
+        <input
+          id="city"
+          type="text"
+          class="form-control"
+          formControlName="city"
+          placeholder="Enter city"
+        />
       </div>
-  
+    </div>
+
+    <!-- Row for Address and State -->
+    <div class="form-row">
       <div class="form-group">
         <label for="address">Address</label>
-        <input id="address" type="text" class="form-control" formControlName="address" placeholder="Enter address" />
+        <input
+          id="address"
+          type="text"
+          class="form-control"
+          formControlName="address"
+          placeholder="Enter address"
+        />
       </div>
-  
       <div class="form-group">
         <label for="state">State</label>
-        <input id="state" type="text" class="form-control" formControlName="state" placeholder="Enter state" />
+        <input
+          id="state"
+          type="text"
+          class="form-control"
+          formControlName="state"
+          placeholder="Enter state"
+        />
       </div>
-  
+    </div>
+
+    <!-- Row for Country and Zip Code -->
+    <div class="form-row">
       <div class="form-group">
         <label for="country">Country</label>
-        <input id="country" type="text" class="form-control" formControlName="country" placeholder="Enter country" />
+        <input
+          id="country"
+          type="text"
+          class="form-control"
+          formControlName="country"
+          placeholder="Enter country"
+        />
       </div>
-  
       <div class="form-group">
         <label for="zipCode">Zip Code</label>
-        <input id="zipCode" type="text" class="form-control" formControlName="zipCode" placeholder="Enter zip code" />
-      </div> -->
-  
-      <div class="form-group">
-        <label for="email">Email</label>
-        <input id="email" type="email" class="form-control" formControlName="email" placeholder="Enter email" />
+        <input
+          id="zipCode"
+          type="text"
+          class="form-control"
+          formControlName="zipCode"
+          placeholder="Enter zip code"
+        />
       </div>
-  
-     
-  
-      <button type="submit" class="btn btn-primary" [disabled]="carForm.invalid">Submit</button>
-    </form>
-  </div>
-  
+    </div>
+    <button type="submit" class="btn btn-primary" [disabled]="carForm.invalid">
+      Update
+    </button>
+  </form>
+</div>
+

@@ -5,40 +5,47 @@ import { registerModel } from '../../Models/registerUser';
 import { CommonModule } from '@angular/common';
 import { NavigationbarComponentAdmin } from '../navigationbar/navigationbar.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { HeaderComponentAdmin } from "../header/header.component";
-
+import { HeaderComponentAdmin } from '../header/header.component';
 
 @Component({
   selector: 'app-add-new-agent',
-  imports: [CommonModule, NavigationbarComponentAdmin, ReactiveFormsModule, FormsModule, HeaderComponentAdmin],
+  imports: [
+    CommonModule,
+    NavigationbarComponentAdmin,
+    ReactiveFormsModule,
+    FormsModule,
+    HeaderComponentAdmin,
+  ],
   templateUrl: './add-new-agent.component.html',
-  styleUrl: './add-new-agent.component.css'
+  styleUrl: './add-new-agent.component.css',
 })
 export class AddNewAgentComponent {
-registerUserObj:registerModel = new registerModel();
+  registerUserObj: registerModel = new registerModel();
 
-  constructor(private router:Router,private registerS:RegisterService){}
+  constructor(private router: Router, private registerS: RegisterService) {}
 
   // console.log(registerModel.firstName);
-  
-  onRegister(){
+
+  onRegister() {
     console.log('Registered User:', this.registerUserObj);
 
-    this.registerS.register(this.registerUserObj).subscribe((result:any)=>{
-      console.log(result.firstName);
-      
-      if(result.email!=null){
-        alert("Registered Successfully");
-        this.router.navigate(['/app-agents']);
-      }
-      else{
-        alert("Not Registered");
-      }
-      
-    });
+    if (this.registerUserObj != null) {
+      this.registerS.register(this.registerUserObj).subscribe((result: any) => {
+        console.log(result.firstName);
+
+        if (result.email != null) {
+          alert('Registered Successfully');
+          this.router.navigate(['/app-agents']);
+        } else {
+          alert('Not Registered');
+        }
+      });
+    }
+    else{
+      alert("Please enter details");
+    }
   }
 
-  
   onSelectOption(role: any) {
     this.registerUserObj.roleType = [role.target.value];
     console.log(this.registerUserObj.roleType);

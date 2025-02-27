@@ -4,7 +4,7 @@ import { carModel } from '../../Models/CarWithLocation';
 import { Router, RouterLink, RouterLinkActive } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { AgentNavBarComponent } from "../agent-nav-bar/agent-nav-bar.component";
+import { AgentNavBarComponent } from '../agent-nav-bar/agent-nav-bar.component';
 import { Observable } from 'rxjs';
 import { SharedService } from '../../Services/shared.service';
 import { HttpClient } from '@angular/common/http';
@@ -15,19 +15,18 @@ import { carModels } from '../../Models/carModels';
   standalone: true,
   imports: [CommonModule, FormsModule, AgentNavBarComponent],
   templateUrl: './your-cars.component.html',
-  styleUrls: ['./your-cars.component.css']
+  styleUrls: ['./your-cars.component.css'],
 })
 export class YourCarsComponent implements OnInit {
-
   carService = inject(CarService);
   router = inject(Router);
-  sharedService = inject(SharedService); 
-  http = inject(HttpClient); 
+  sharedService = inject(SharedService);
+  http = inject(HttpClient);
 
-  carList: carModels[] = [];
-  successMessage: string = ''; // Property to hold the success message
-  errorMessage: string = '';   // Property to handle error message (optional)
-  email: string | null = null; 
+  carList: carModel[] = [];
+  // successMessage: string = ''; // Property to hold the success message
+  // errorMessage: string = '';   // Property to handle error message (optional)
+  email: string | null = null;
 
   ngOnInit(): void {
     this.sharedService.currentEmail.subscribe((email) => {
@@ -35,60 +34,55 @@ export class YourCarsComponent implements OnInit {
         this.email = email; // Assign the email
         this.GetAgentCarsByEmail(); // Automatically fetch cars
       } else {
-        this.errorMessage = 'Email is not available. Please log in again.';
+        // this.errorMessage = 'Email is not available. Please log in again.';
       }
     });
   }
   GetAgentCarsByEmail(): void {
     if (!this.email) {
-      this.errorMessage = 'Email is not available.';
+      // this.errorMessage = 'Email is not available.';
       return;
     }
 
-    const url = `https://localhost:7273/api/Agent/GetCarsByEmail?email=${encodeURIComponent(this.email)}`;
-    this.http.get<carModels[]>(url).subscribe(
-      (response) => {
+    const url = `https://localhost:7273/api/Car/agent-get-all-cars?email=${encodeURIComponent(
+      this.email
+    )}`;
+    this.http.get<carModel[]>(url).subscribe({
+      next: (response) => {
         this.carList = response; // Populate carList with API response
-        this.successMessage = 'Cars fetched successfully.';
-        this.errorMessage = '';
+        // this.successMessage = 'Cars fetched successfully.';
+        // this.errorMessage = '';
+        if (response.length == 0) {
+          alert('No Cars Registered!!!');
+          this.router.navigate(['app-agent-home-page']);
+        }
       },
-      (error) => {
+      error: (error) => {
         console.error('Failed to fetch cars:', error);
-        this.errorMessage = 'Failed to fetch car list. Please try again.';
+        // this.errorMessage = 'Failed to fetch car list. Please try again.';
         this.carList = [];
-      }
-    );
+      },
+    });
   }
 
   UpdateCarDetails(selectedCar: carModels) {
-    this.router.navigate(['/app-update-car-details'], { state: { data: selectedCar } });
+    this.router.navigate(['/app-update-car-details'], {
+      state: { data: selectedCar },
+    });
   }
 
   DeleteCar(selectedCar: carModels) {
     if (confirm('Are you sure you want to delete this car?')) {
-      this.carService.DeleteCar(selectedCar.licensePlate).subscribe(
-        (response: any) => {
-          // After successful deletion, update the car list
-          this. GetAgentCarsByEmail();
-
-          // Set the success message
-          this.successMessage = 'Car deleted successfully';
-          
-          // Optionally, remove the deleted car from the list immediately
-          this.carList = this.carList.filter(car => car.licensePlate !== selectedCar.licensePlate);
-          
-          // Clear the error message if any
-          this.errorMessage = '';
-
-          setTimeout(() => {
-            this.successMessage = ''; // Hide success message after 5 seconds
-            document.querySelector('.alert-success')?.classList.add('fade-out'); // Add fade-out class
-          }, 5000);
+      this.carService.deleteCar(selectedCar.licensePlate).subscribe({
+        next: (response) => {
+          this.GetAgentCarsByEmail();
+          alert('Car deleted successfully!');
+          // this.router.navigate(['/app-your-cars']); // Redirect after successful delete
         },
-        (error) => {
-          this.errorMessage = 'Failed to delete car. Please try again.';
-        }
-      );
+        error: (error) => {
+          alert('Failed to delete car. Please try again.');
+        },
+      });
     }
   }
 }

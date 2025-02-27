@@ -3,8 +3,11 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   /* background-color: #f3c9c9; */
   background-color: #f9efef;
-  height: 76px;;
+  height: 76px;
   /* background-color: #f9efef; */
+  width: 100vw;
+  position: fixed;
+  z-index: 10;
 
 }
 
@@ -26,18 +29,7 @@
 .nav-link:hover {
   color: #dc3545;
 }
-.search-bar{
-  width: 280px;
-}
-.search-btn{
-  height: 40px;
-  border: 1px solid #dc3545;
-  color: #000;
-}
-.search-btn:hover{
-  background-color: #dc3545;
-  color: #f9efef;
-}
+
 /* For the toggler button */
 .navbar-toggler-icon {
   background-color: #b84343;

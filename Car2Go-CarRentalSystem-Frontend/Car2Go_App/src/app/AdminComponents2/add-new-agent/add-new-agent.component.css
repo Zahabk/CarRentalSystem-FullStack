@@ -1,80 +1,126 @@
-/* Container for the registration form */
-.registration-form {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    height: calc(100vh - 100px);
-    padding: 20px;
-    background: transparent;
-    margin-top: 50px;
+/* Container for the entire form */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align items at the top of the container */
+  height: 100vh; /* Full viewport height */
+  padding: 20px;
+  position: relative;
+  left: 100px;
+  /* background: transparent; Ensure the container background is transparent */
 }
 
 /* Form Container Styling */
-.registration-form form {
-    background: white;
-    padding: 30px;
-    border-radius: 15px;
-    border: 2px solid #dc3545;
-    width: 650px;
-    max-width: 100%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    color: black;
-    margin-left: 200px;
+.form-container {
+  background: white; /* Change form background to white */
+  padding: 30px; /* Reduced padding to decrease height */
+  border-radius: 15px;
+  border: 2px solid #dc3454;
+  width: 550px; /* Expanded width */
+  max-width: 100%; /* Ensure it adapts to screen size */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Increased gap between form fields */
+  margin-top: 15px; /* Moved the form a bit down */
+  color: black; /* Set text color to black for better readability */
 }
 
-/* Heading Styling */
-.form-heading {
-    text-align: center; /* Center the heading horizontally */
-    font-weight: bold; /* Make the heading bold */
-    font-size: 28px; /* Adjust the size as needed */
-    margin-bottom: 20px; /* Add space below the heading */
-    color: black; /* Set text color */
+/* Header Styling */
+h2 {
+  text-align: center;
+  color: black; /* Set header text color to black */
+  font-weight: bold;
+  font-size: 24px; /* Slightly larger font for better readability */
+  margin-bottom: 10px;
 }
 
-/* Form Groups for Horizontal Layout */
-.form-group {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 15px;
+/* Form Row Styling */
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Space between the fields */
 }
 
-/* Ensure all labels have consistent width */
-.form-group label {
-    flex: 0 0 120px;
-    font-size: 16px;
-    color: rgb(8, 8, 8);
-    font-weight: bold;
-    display: block;
+/* Input Fields in Form Row */
+.form-row .form-group {
+  flex: 1; /* Allow fields to take equal space */
 }
 
-/* Input Fields Styling */
-.form-group input,
-.form-group select {
-    flex: 1;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 16px;
-    box-sizing: border-box;
-    transition: all 0.3s ease;
-    background-color: #f9f9f9;
-    color: black;
+/* Ensure proper spacing for labels and inputs */
+label {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+input,
+textarea, select,option {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #f9f9f9;
+}
+
+input:focus,
+textarea:focus, select:focus {
+  border-color: #800000;
+  outline: none;
+}
+
+/* Styling for the description textarea */
+textarea {
+  height: 100px; /* Increased height of the description textarea */
 }
 
 /* Button Styling */
-.registration-form button[type="submit"] {
-    width: 100%;
-    padding: 14px;
-    background-color: red;
-    color: #fff;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 18px;
-    margin-top: 20px;
-    transition: background-color 0.3s ease;
+button[type="submit"] {
+  width: 100%;
+  padding: 14px;
+  background-color: #dc3454; /* Red background for submit button */
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px; /* Increased font size for button */
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #dc3454;
+}
+
+/* Ensure the form looks good on mobile */
+@media screen and (max-width: 768px) {
+  .form-container {
+    width: 90%; /* Adjust width for smaller screens */
+  }
+
+  h2 {
+    font-size: 26px; /* Adjusted font size for smaller screens */
+  }
+}
+
+/* Further optimization for very small screens */
+@media screen and (max-width: 480px) {
+  .form-container {
+    width: 95%; /* More narrow width on very small screens */
+  }
+
+  h2 {
+    font-size: 22px; /* Adjusted font size for very small screens */
+  }
+
+  /* Reduce padding of form inputs for small screens */
+  input,
+  textarea,
+  button[type="submit"] {
+    padding: 10px;
+  }
 }

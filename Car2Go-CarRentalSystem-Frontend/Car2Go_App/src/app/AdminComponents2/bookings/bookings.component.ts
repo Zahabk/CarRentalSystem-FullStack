@@ -26,6 +26,9 @@ export class BookingsComponent implements OnInit {
       //   console.log(element);
         
       // });
+      if(result.length==0){
+        alert("No Bookings Found");
+      }
     });
   }
 }

@@ -1,12 +1,3 @@
-/* Set the entire page background color to a gradient */
-body {
-  background: linear-gradient(to right, #141E30, #243B55);  /* Gradient background */
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif; /* Optional: Choose a clean font */
-  color: white; /* Set default text color to white for better readability */
-}
-
 /* Container for the entire form */
 .container {
   display: flex;
@@ -15,7 +6,7 @@ body {
   height: 100vh;  /* Full viewport height */
   padding: 20px;
   position: relative;
-  background: transparent; /* Ensure the container background is transparent */
+  /* background: transparent; Ensure the container background is transparent */
 }
 
 /* Form Container Styling */
@@ -24,43 +15,53 @@ body {
   padding: 30px; /* Reduced padding to decrease height */
   border-radius: 15px;
   border: 2px solid #dc3454;
-  width: 650px; /* Expanded width */
+  width: 550px; /* Expanded width */
   max-width: 100%; /* Ensure it adapts to screen size */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   display: flex;
   flex-direction: column;
   gap: 20px; /* Increased gap between form fields */
-  margin-top: 40px; /* Moved the form a bit down */
+  margin-top: 80px; /* Moved the form a bit down */
   color: black; /* Set text color to black for better readability */
 }
 
 /* Logo Image Styling */
 .project-logo-img {
-  width: 200px; /* Adjusted width for the logo */
-  height: auto; /* Maintain aspect ratio */
-  margin: 0 auto 20px; /* Center align and space between logo and header */
+  width: 150px; 
+  height: auto; 
+  margin: 0 auto 20px; 
 }
 
 /* Header Styling */
-h2 {
+h5 {
   text-align: center;
   color: black; /* Set header text color to black */
   font-weight: bold;
-  font-size: 40px; /* Slightly larger font for better readability */
-  margin-bottom: 20px;
+  font-size: 24px; /* Slightly larger font for better readability */
+  margin-bottom: 10px;
 }
 
-/* Label Styling */
+/* Form Row Styling */
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Space between the fields */
+}
+
+/* Input Fields in Form Row */
+.form-row .form-group {
+  flex: 1; /* Allow fields to take equal space */
+}
+
+/* Ensure proper spacing for labels and inputs */
 label {
-  font-size: 16px; /* Larger font size for labels */
-  color: rgb(8, 8, 8); /* Set label text color to black */
+  font-size: 16px;
   font-weight: bold;
   margin-bottom: 5px;
   display: block;
 }
 
-/* Input and Textarea Styling */
 input,
 textarea {
   width: 100%;
@@ -68,11 +69,8 @@ textarea {
   margin-top: 8px;
   border: 1px solid #ccc;
   border-radius: 8px;
-  font-size: 16px; /* Increased font size for inputs */
-  box-sizing: border-box;
-  transition: all 0.3s ease;
-  background-color: #f9f9f9; /* Light background for inputs */
-  color: black; /* Black text color for inputs */
+  font-size: 16px;
+  background-color: #f9f9f9;
 }
 
 input:focus,
@@ -86,30 +84,42 @@ textarea {
   height: 100px; /* Increased height of the description textarea */
 }
 
-/* Checkbox Container Styling */
+/* Styling for the Available Status Section */
 .checkbox-container {
   display: flex;
   align-items: center;
-  gap: 10px; /* Gap between label and checkbox */
+  gap: 15px; /* Space between checkbox and label */
 }
 
-/* Checkbox Wrapper Styling */
-.checkbox-wrapper {
-  display: flex;
-  align-items: center;
-  gap: 5px; /* Gap between checkbox and span */
-}
-
-/* Checkbox Styling */
+/* Styled Checkbox */
 input[type="checkbox"] {
-  transform: scale(1.2);
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  border: 2px solid #ccc;
+  border-radius: 5px; /* Rounded checkbox */
+  transition: background-color 0.3s, border-color 0.3s;
 }
+
+/* Checkbox Hover Effect */
+input[type="checkbox"]:hover {
+  border-color: #800000;
+}
+
+/* Checked State Styling */
+input[type="checkbox"]:checked {
+  background-color: #800000;
+  border-color: #800000;
+  color: white;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
 
 /* Button Styling */
 button[type="submit"] {
   width: 100%;
   padding: 14px;
-  background-color: red;  /* Red background for submit button */
+  background-color: #dc3454;  /* Red background for submit button */
   color: #fff;
   border: none;
   border-radius: 8px;
@@ -120,7 +130,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color: #a00000;
+  background-color: #dc3454;
 }
 
 /* Styling for the Available Date */
@@ -139,17 +149,41 @@ input[type="checkbox"] {
   transform: scale(1.2);
 }
 
-/* Image Upload Button Styling */
-input[type="file"] {
-  padding: 12px;
-  margin-top: 8px;
-  font-size: 16px; /* Increased font size for file input */
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  display: block;
-  background-color: #800000; /* Red background for file input */
-  color: white; /* White text color for file input */
+/* Styling for the File Upload Button */
+.file-upload-container {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between label and button */
 }
+
+input[type="file"] {
+  display: none; /* Hide the default file input */
+}
+
+.custom-file-upload {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #534c4c; /* Dark red background */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.custom-file-upload:hover {
+  background-color: #dc3454; /* Darker shade on hover */
+}
+
+/* Optional: Add a small preview next to the button */
+.file-name {
+  font-size: 14px;
+  color: #555;
+  font-style: italic;
+}
+
 
 /* Ensure the form looks good on mobile */
 @media screen and (max-width: 768px) {
@@ -157,7 +191,7 @@ input[type="file"] {
     width: 90%; /* Adjust width for smaller screens */
   }
 
-  h2 {
+  h5 {
     font-size: 26px; /* Adjusted font size for smaller screens */
   }
 }
@@ -168,7 +202,7 @@ input[type="file"] {
     width: 95%; /* More narrow width on very small screens */
   }
 
-  h2 {
+  h5 {
     font-size: 22px; /* Adjusted font size for very small screens */
   }
 

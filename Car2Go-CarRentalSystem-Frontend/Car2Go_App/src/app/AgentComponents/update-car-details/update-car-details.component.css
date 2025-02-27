@@ -1,115 +1,206 @@
-/* General Container Styles */
+/* Container for the entire form */
 .container {
-    max-width: 800px;
-    margin: 30px auto;
-    padding: 20px;
-    background-color: #f8f9fa;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    border: 2px solid #dc3545;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align items at the top of the container */
+  height: 100vh;  /* Full viewport height */
+  padding: 20px;
+  position: relative;
+  /* background: transparent; Ensure the container background is transparent */
+}
+
+/* Form Container Styling */
+.form-container {
+  background: white; /* Change form background to white */
+  padding: 30px; /* Reduced padding to decrease height */
+  border-radius: 15px;
+  border: 2px solid #dc3454;
+  width: 550px; /* Expanded width */
+  max-width: 100%; /* Ensure it adapts to screen size */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Increased gap between form fields */
+  margin-top: 80px; /* Moved the form a bit down */
+  color: black; /* Set text color to black for better readability */
+}
+
+/* Header Styling */
+h2 {
+  text-align: center;
+  color: black; /* Set header text color to black */
+  font-weight: bold;
+  font-size: 24px; /* Slightly larger font for better readability */
+  margin-bottom: 10px;
+}
+
+/* Form Row Styling */
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Space between the fields */
+}
+
+/* Input Fields in Form Row */
+.form-row .form-group {
+  flex: 1; /* Allow fields to take equal space */
+}
+
+/* Ensure proper spacing for labels and inputs */
+label {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #f9f9f9;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #800000;
+  outline: none;
+}
+
+/* Styling for the description textarea */
+textarea {
+  height: 100px; /* Increased height of the description textarea */
+}
+
+/* Styling for the Available Status Section */
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Space between checkbox and label */
+}
+
+/* Styled Checkbox */
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  border: 2px solid #ccc;
+  border-radius: 5px; /* Rounded checkbox */
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Checkbox Hover Effect */
+input[type="checkbox"]:hover {
+  border-color: #800000;
+}
+
+/* Checked State Styling */
+input[type="checkbox"]:checked {
+  background-color: #800000;
+  border-color: #800000;
+  color: white;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+
+/* Button Styling */
+button[type="submit"] {
+  width: 100%;
+  padding: 14px;
+  background-color: #dc3454;  /* Red background for submit button */
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px; /* Increased font size for button */
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #dc3454;
+}
+
+/* Styling for the Available Date */
+input[type="date"] {
+  padding: 12px;
+  font-size: 16px; /* Increased font size for date input */
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9; /* Light background for date input */
+  color: black; /* Black text color for date input */
+}
+
+/* Styling for the Available Status checkbox */
+/* input[type="checkbox"] {
+  margin-left: 5px;
+  transform: scale(1.2);
+} */
+
+/* Styling for the File Upload Button */
+.file-upload-container {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between label and button */
+}
+
+input[type="file"] {
+  display: none; /* Hide the default file input */
+}
+
+.custom-file-upload {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #534c4c; /* Dark red background */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.custom-file-upload:hover {
+  background-color: #dc3454; /* Darker shade on hover */
+}
+
+/* Optional: Add a small preview next to the button */
+.file-name {
+  font-size: 14px;
+  color: #555;
+  font-style: italic;
+}
+
+
+/* Ensure the form looks good on mobile */
+@media screen and (max-width: 768px) {
+  .form-container {
+    width: 90%; /* Adjust width for smaller screens */
   }
-  
-  /* Heading Style */
-  h2 {
-    text-align: center;
-    color: #343a40;
-    font-size: 1.8rem;
-    margin-bottom: 30px;
-    font-weight: bolder;
+
+  h5 {
+    font-size: 26px; /* Adjusted font size for smaller screens */
   }
-  
-  /* Form Group Styles */
-  .form-group {
-    margin-bottom: 15px;
+}
+
+/* Further optimization for very small screens */
+@media screen and (max-width: 480px) {
+  .form-container {
+    width: 95%; /* More narrow width on very small screens */
   }
-  
-  label {
-    font-size: 1.1rem;
-    color: #495057;
-    margin-bottom: 5px;
-    display: block;
-    font-weight: bold;
+
+  h5 {
+    font-size: 22px; /* Adjusted font size for very small screens */
   }
-  
-  /* Input Styles */
-  input.form-control {
-    width: 100%;
+
+  /* Reduce padding of form inputs for small screens */
+  input, textarea, button[type="submit"] {
     padding: 10px;
-    font-size: 1rem;
-    border: 1px solid #ced4da;
-    border-radius: 5px;
-    background-color: #fff;
-    transition: border-color 0.3s ease;
   }
-  
-  /* Input Focus Effect */
-  input.form-control:focus {
-    border-color: #007bff;
-    outline: none;
-  }
-  
-  /* Checkbox Styles */
-  input[type="checkbox"] {
-    margin-right: 10px;
-  }
-  
-  /* Button Styles */
-  button.btn {
-    width: 100%;
-    padding: 12px;
-    font-size: 1.2rem;
-    color: #fff;
-    background-color: #007bff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  /* Button Hover Effect */
-  button.btn:hover {
-    background-color: #0056b3;
-  }
-  
-  /* Disabled Button Style */
-  button.btn[disabled] {
-    background-color: #cccccc;
-    cursor: not-allowed;
-  }
-  
-  /* Responsive Design for Smaller Screens */
-  @media (max-width: 576px) {
-    .container {
-      padding: 15px;
-    }
-  
-    h2 {
-      font-size: 1.5rem;
-    }
-  
-    button.btn {
-      font-size: 1rem;
-    }
-  }
-  
-  /* Error Validation Style */
-  input.ng-invalid.ng-touched {
-    border-color: #dc3545;
-  }
-  
-  input.ng-valid.ng-touched {
-    border-color: #28a745;
-  }
-  
-  /* Success Validation Style */
-  input.ng-valid.ng-touched:focus {
-    border-color: #28a745;
-  }
-  
-  /* Tooltip or error message */
-  .invalid-feedback {
-    color: #dc3545;
-    font-size: 0.875rem;
-    margin-top: 5px;
-  }
-  
+}

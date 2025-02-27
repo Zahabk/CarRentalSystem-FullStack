@@ -17,7 +17,7 @@ export class AdminUpdateCarComponent implements OnInit{
 
   
     carForm!: FormGroup;
-    carData: carModels;
+    carData: carModel;
   
     constructor(
       private fb: FormBuilder,
@@ -48,19 +48,19 @@ export class AdminUpdateCarComponent implements OnInit{
         
         availableStatus: [false],
         availableDate: ['', Validators.required],
-        // city: ['', Validators.required],
-        // address: ['', Validators.required],
-        // state: ['', Validators.required],
-        // country: ['', Validators.required],
-        // zipCode: ['', Validators.required],
+        city: ['', Validators.required],
+        address: ['', Validators.required],
+        state: ['', Validators.required],
+        country: ['', Validators.required],
+        zipCode: ['', Validators.required],
        
       });
     }
   
     onSubmit() {
       if (this.carForm.valid) {
-        const updatedCar = this.carForm.value as carModels;
-        this.carService.updateCarForAdmin(updatedCar).subscribe({
+        const updatedCar = this.carForm.value as carModel;
+        this.carService.updateCar(updatedCar).subscribe({
           next:(response) => {
              alert('Car updated successfully!');
             this.router.navigate(['/app-cars']); // Redirect after successful update
